@@ -71,3 +71,91 @@
 #footer .area > div strong{font-size: 24px;padding-bottom: 20px;}
 #footer .area > div p{font-size: 14px;}
 #footer .area > p{font-size: 14px;line-height: 30px;text-align: center;}
+
+@media (max-width:1199px){
+    .area{width: 100%;}
+    .title{padding: 20px 10px;font-size: 24px;}
+    #header{height: 340px;}
+    #header > .area{height: calc(100% - 40px);}
+    #header > .area .logo_bg{width: 200px;height: 200px;border-radius: 20px;}
+    #header > .area .logo_img{top: 5px;}
+    #header > .area .logo_img img{height: 75px;}
+    #header > .area p{padding: 0;bottom: 70px;left: 50%;transform: translateX(-50%);width: 180px;font-size: 24px;}
+    #header #gnb .area ul li a{line-height: 40px;font-size: 18px;}
+
+    #section{width: 100%;padding: 0 20px;}
+    #section #article01 .l_box{float: left;width: 100%;}
+    #section #article01 .l_box ul li{background-size: cover;}
+    #section #article01 .l_box ul li + li:hover{background-size: cover;}
+    #section #article01 .l_box ul li + li a{opacity: 1;}
+    #section #article01 .r_box{display: none;}
+    #section #article01 .l_box ul li a p{font-size: 18px;}
+
+    #section #article02 ul li{background-size: cover;}
+    #section #article02 ul li:hover{background-size: cover;}
+    #section #article02 ul li a .center_box{opacity: 1;}
+    #section #article02 ul li a .center_box .spot{font-size: 16px;}
+    #section #article02 ul li a .center_box .bar{width: 40px;height: 2px;}
+    #section #article02 ul li a .center_box .time{font-size: 12px;}
+    #section #article02 ul li a .center_box span{display: none;}
+    .area .btn_box{margin: 20px 0 10px;font-size: 16px;}
+    .area .btn_box p{line-height: 50px;}
+    .area .btn_box button{width: 155px;line-height: 25px;margin: 12.5px 0;}
+    #footer .area > div strong{font-size: 16px;padding-bottom: 10px;}
+    #footer .area > div p{font-size: 12px;}
+    #footer .area > p{font-size: 12px;}
+}
+
+@media (max-width:767px){
+    #header{height: 245px;}
+    #header > .area{height: calc(100% - 45px);}
+    #header > .area .logo_bg{width: 120px;height: 120px;border-radius: 12px;}
+    #header > .area .logo_img img{height: 45px;}
+    #header > .area p{bottom: 30px;}
+    #header #gnb .area ul li a{line-height: 45px;}
+
+    #section{padding: 0 10px;}
+    #section #article01{position: relative;}
+    #section #article01 .l_box ul li{width: calc(100% / 2);}
+    #section #article01 .l_box ul li:nth-child(1){width: calc(100% / 2);}
+    #section #article01 .l_box ul li a{height: 130px;}
+    #section #article01 .l_box ul li a p{font-size: 16px;}
+    #section #article01 .l_box ul li + li a p{line-height: 130px;}
+    /* 이론적으로는 float: left;만으로 .r_box가 위로 올라가는게 맞으나, 오류가 나므로 position으로 선언해준다! */
+    #section #article01 .r_box{display: block;position: absolute;bottom: 0;right: 0;/* float: left; */width: calc(100% / 2);}
+    #section #article01 .r_box a{height: 130px;}
+    #section #article01 .r_box a p{font-size: 16px;}
+
+    #section #article02 ul li:nth-child(2){height: 155px;}
+    #section #article02 ul li a .center_box{height: 155px;}
+    .area .btn_box{padding: 0 10px;font-size: 14px;}
+    .area .btn_box p{line-height: 42px;}
+    .area .btn_box button{width: 135px;line-height: 22px;margin: 10px 0;}
+    #footer .area{padding-top: 10px;}
+    #footer .area > div{height: 100px;padding: 0 10px;}
+    #footer .area > div strong{font-size: 14px;line-height: 20px;}
+}
+
+@media (max-width:639px){
+    .title{font-size: 16px;}
+    #header > .area p{bottom: 45px;width: 135px;font-size: 18px;}
+    #header #gnb .area ul li a{font-size: 14px;}
+    
+    #section #article01 .l_box ul li:nth-child(1){width: 100%;}
+    #section #article01 .l_box ul li a{height: 60px;}
+    #section #article01 .l_box ul li:nth-child(1) a{height: 125px;}
+    #section #article01 .l_box ul li + li a p{line-height: 60px;}
+    #section #article01 .r_box{display: none;}
+
+    #section #article02 ul li{width: 100%;}
+    #section #article02 ul li:nth-child(2){display: none;}
+    #section #article02 ul li a .center_box{height: 60px;}
+    #section #article02 ul li a .center_box .spot{font-size: 14px;}
+    #section #article02 ul li a .center_box .bar{display: none;}
+    #section #article02 ul li a .center_box .time{display: none;}
+    .area .btn_box{display: none;}
+    #footer{margin-top: 20px;}
+    #footer .area{padding-top: 0px;}
+    #footer .area > div{display: none;}
+    #footer .area > p{font-size: 12px;}
+}
